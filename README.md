@@ -22,7 +22,7 @@
 3. Display the following on the page:
     * Press any key to get started!
     * Wins: # of times user guessed the word correctly
-    * As the user guesses the correct letter, make the word display like this: mado _ _ a
+    * As the user guesses the correct letter, make the word display like this: pik_c_u
     * Number of Guesses Remaining: # of guesses remaining for the user
     * Letters Already Guessed: letters the user has guessed
 4. The game should automatically choose another word and make the user play it
