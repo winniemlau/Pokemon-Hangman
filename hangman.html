@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon Hangman</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<center><img src="assets/images/pikaball.png" width="275px"></center>
+				<h1>Pokemon Hangman</h1><br>
+				<h2>Catch your Pokemon by guessing its name! </h2>
+				<p>To start the game, press any letter (A-Z)</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+
+				<!-- First Panel: Holds the Word to Guess (blanks and guessed word) -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Word to Guess</strong></h3>
+					</div>
+					<div class="panel-body">
+						<!-- This h3 section called wordblanks is what we'll be replacing with letters as the user guesses. Pay particular attention to the id called ***wordblanks***. We'll be referencing this in the Javascript. -->
+						<h3 id="wordblanks">_ _ _ _ _ _ _ _ _ </h3>
+					</div>
+
+
+					<!-- Second Panel: Holds the list of Wrong User Guesses. -->
+						<div class="panel-body">
+							<!-- This span section called userGuesses is where we will be dumping the wrong guesses. Pay particular attention to the id called ****userGuesses***. We'll be referencing this in the Javascript. -->
+							<strong>Wrong Guesses: </strong> <span id="wrongGuesses"></span>
+						</div>
+
+
+						<!-- Third Panel: Holds the Number of Wrong Guesses -->
+						<div class="panel-body">
+							<!-- This span called guessesLeft is where we will be dumping the number of guesses left. Pay attention to the id called ****guessesLeft****. We'll be referencing this in the Javascript. -->
+							<strong>Guesses Left: </strong> <span id="guessesLeft">9</span>
+						</div>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-6">
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><strong>Counter</strong></h3>
+						</div>
+						<div class="panel-body">
+							<!-- This h3 section called wordblanks is what we'll be replacing with letters as the user guesses. Pay particular attention to the id called ***wordblanks***. We'll be referencing this in the Javascript. -->
+							<h3 id="wordblanks">How many Pokemon have you caught or lost?</h3>
+						</div>
+
+						<div class="panel-body">
+							<!-- This span called winCounter is where we'll be dumping the number of wins. Pay attention to the id called ****winCounter***. We'll be referencing this in the Javascrit. -->
+							<strong>Caught: </strong> <span id="winCounter">0</span>
+						</div>
+
+						<div class="panel-body">
+							<!-- This span called winCounter is where we'll be dumping the number of wins. Pay attention to the id called ****winCounter***. We'll be referencing this in the Javascrit. -->
+							<strong>Losses: </strong> <span id="lossCounter">0</span>
+						</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+	<audio id="my_audio" src="assets/audio/pikachu.wav"></audio>
+		<audio id="my_audio2" src="assets/audio/pika4.wav"></audio>
+	<!-- Adds a link to the javascript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won't exist yet.-->
+	<script src='hangmanGame.js'></script>
+</body>
