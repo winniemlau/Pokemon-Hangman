@@ -27,4 +27,4 @@
 
 ###Deployed App
 
-Heroku: 
+Heroku: http://pokemonhangman.herokuapp.com/
