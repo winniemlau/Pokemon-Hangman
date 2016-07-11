@@ -1,6 +1,9 @@
 # Week 3 Assignment
 ##Pokemon Hangman Game
 
+![alt tag](https://github.com/winniemlau/Pokemon-Hangman/blob/master/assets/images/phscreenshot.jpg)
+
+
 ###Objectives
 
 * Create a fun and interactive hangman game in the browser
