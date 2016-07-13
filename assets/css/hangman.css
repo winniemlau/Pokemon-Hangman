@@ -9,8 +9,9 @@ h2 {
 
 
 .container {
-  margin-top: -15px;
-  margin-bottom: -25px;
+  margin: auto;
+  /*margin-top: -15px;
+  margin-bottom: -25px;*/
   background-color: #ebeac3;
 }
 
